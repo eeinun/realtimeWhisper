@@ -63,7 +63,7 @@ while True:
             pred = model.transcribe(
                 audio=np.concatenate((normalized_buffer, np.zeros(30 * SAMPLE_RATE - len(normalized_buffer)).astype(np.float32))),
                 language='en',
-                initial_prompt="Segment should be sentence-wise. People who speaking is Vedal, Neuro, Evil, Chat, Anny. You must NOT write anything if there is silence. Silence. No you are NOT ALLOWED TO WRITE ANYTHING.''"
+                initial_prompt="Segment should be sentence-wise. You must NOT write anything if there is silence. Silence. No you are NOT ALLOWED TO WRITE ANYTHING.''"
             )
 
             # print(f"[{start:.3f} - {time.time() - init_time:.3f}][{len(normalized_buffer)}] < {pred['segments']} >")
