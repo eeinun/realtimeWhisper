@@ -1,0 +1,2 @@
+- `stt.py` : Use CUDA for whisper model. Tested on CUDA 12.6, torch 2.5.1+cu124.
+- `stt_parallel.py` : WIP. Trying to minimize latency while using CPU. 
