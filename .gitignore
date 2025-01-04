@@ -1,4 +1,6 @@
 /.venv/
 /ffmpeg.exe
-/.idea/
+/.idea
+/.idea/*
 key.txt
+/test
